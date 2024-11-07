@@ -3,19 +3,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Vote for free</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='w3.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <style> 
     body {
       margin: 0;
-      background-color: black;
+      background-color:  rgb(38, 9, 47); color;
     }
-    video {
-      width: 100%;
+    .forsmall {
+      width: 80%;
       height: 500px;
     }
     .botobotu {
@@ -23,7 +23,7 @@
      background-color: #8d4d95a6;
      color: white;
      padding-bottom: 50px;
-     height: 150px;
+     height: 200px;
     padding-top: 10px;
     }
     button {
@@ -36,16 +36,38 @@
       margin: 0px;
     }
     </style>
-    <video loop muted autoplay>
-      <source src="voting.mp4"> Your browser does not support this videop
-    </video>
-    <center>
-    <div class="botobotu">
+     <center>
+      <!-- This area is for small devices-->
+    <img src="voting.gif" class="forsmall w3-hide-large w3-hide-medium">
+    <!-- This area is for large devices-->
+    <img src="voting.gif" class="w3-hide-small w3-hide-medium" style="height: 2190px; width: 50%; margin-top: 300px;">
+    <!-- This area is for medium size-->
+    <img src="voting.gif" class="w3-hide-small w3-hide-large" style="height: 900px; width: 100%;">
+    <!-- This area is for small devices-->
+    <div class="botobotu w3-hide-large w3-hide-medium">
         <h1> To vote is free </h1>
         <p> Click the "vote now" button bellow to vote now</p>
         <form action="votelogin.html">
       <button type="submit"> <b>Vote Now</b></button>
       </form>
     </div>
+    <!-- this area is for large devices-->
+   <footer> <div class="w3-hide-small w3-hide-medium" style="background-color: rgb(13, 7, 14); color: white; height: 1000px; padding-top: 5px; margin-top: 150px;">
+      <h1 style="margin-top: 150px; font-size: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> To vote is free </h1>
+      <p style="font-size: 80px; font-family: 'Times New Roman', Times, serif;"> Click the "vote now" button bellow to vote now</p>
+      <form action="votelogin.html">
+    <button type="submit" style="width: 2000px; height: 150px; font-size: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <b>Vote Now</b></button>
+    </form>
+  </div>
+</footer>
+<!-- This area is for medium size -->
+<footer> <div class="w3-hide-small w3-hide-large" style="background-color: rgb(13, 7, 14); color: white; height: 500px; padding-top: 5px;">
+  <h1 style="margin-top: 150px;"> To vote is free </h1>
+  <p> Click the "vote now" button bellow to vote now</p>
+  <form action="votelogin.html">
+<button type="submit"> <b>Vote Now</b></button>
+</form>
+</div>
+</footer>
 </body>
 </html>
