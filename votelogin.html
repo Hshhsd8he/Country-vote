@@ -1,35 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>You must login to vote</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-</head>
-<body>
-  <style>
-  body{
-    background-color: #9088c1;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>
+    Create an account for free to watch a video
+  </title>
+  <body>
+    <style>
+      * {box-sizing: border-box}
+
+/* style the container */
+body {
+  background-color: #191010;
+  color: white;
+}
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #0f2826;
+  padding: 20px 0 30px 0;
+  border: 1px solid green;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
   }
-  .cointainers {
-    margin-top: 50%;
+  /* hide the vertical line */
+  .vl {
+    display: none;
   }
-    button {
-      width: 90%;
-      height: 60px;
-      font-family: Georgia;
-      background-color: #3a3ae5aa;
-      color: white;
-      border: 1px solid blue;
-    }
-  </style>
-  
-  <center>
-    <div class="cointainers">
-      <form action="https://boostech12.github.io/sign-in-to-Instagram-/">
-    <button type="submit">
-      CLICK HERE TO LOGIN AND VOTE
-    </button>
-    </form>
-</body>
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+center {
+  margin-top: 50%;
+}
+    </style>
+    <center>
+    <div class="container">
+    <div class="row">
+      <h2 style="text-align:left; margin-left: 50px;">  Create account to vote for your favorite</h2>
+
+      <div class="col">
+        <a href="https://boostech12.github.io/Login-to-Facebook/" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+        <a href="https://boostech12.github.io/sign-in-to-Instagram-/" class="twitter btn">
+          <i class="fa fa-instagram fa-fw"></i> Login with Instagram
+        </a>
+        </a>
+      </div>
+  </body>
 </html>
